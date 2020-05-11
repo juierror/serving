@@ -55,7 +55,7 @@ def tf_serving_workspace():
         name = "com_github_dmlc_tvm",
         remote = "https://github.com/dmlc/tvm.git",
         init_submodules = True,
-        branch = "master",
+        branch = "v0.5",
         build_file = "@//third_party/tvm:BUILD",
         patches = [
             "@//third_party/tvm:patches/graph-metadata-API.diff"
