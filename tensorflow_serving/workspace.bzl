@@ -58,7 +58,7 @@ def tf_serving_workspace():
         branch = "v0.6",
         build_file = "@//third_party/tvm:BUILD",
         patches = [
-            "@//third_party/tvm:patches/graph-metadata-API.diff"
+            "@//third_party/tvm:patches/graph-metadata-API-new.diff"
         ],
         patch_args = ["-p1"],
     )
