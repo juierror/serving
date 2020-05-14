@@ -53,9 +53,9 @@ def tf_serving_workspace():
     # ===== tvm (tvm.ai) dependencies =====
     new_git_repository(
         name = "com_github_dmlc_tvm",
-        remote = "https://github.com/dmlc/tvm.git",
+        remote = "https://github.com/apache/incubator-tvm.git",
         init_submodules = True,
-        branch = "v0.5",
+        branch = "v0.6",
         build_file = "@//third_party/tvm:BUILD",
         patches = [
             "@//third_party/tvm:patches/graph-metadata-API.diff"
