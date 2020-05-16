@@ -48,7 +48,7 @@ Status TVMLoadModel(const std::string& export_dir,
   params_arr.data = params_data.c_str();
   params_arr.size = params_data.length();
 
-  int device_type = kDLCPU;
+  int device_type = kDLGPU;
   int device_id = 0;
 
   // get global function module for graph runtime
