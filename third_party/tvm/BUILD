@@ -25,8 +25,8 @@ cc_library(
         "src/runtime/dso_module.cc",
         "src/runtime/system_lib_module.cc",
         "src/runtime/graph/graph_runtime.cc",
-	"src/runtime/cuda/cuda_device_api.cc",
-	"src/runtime/cuda/cuda_module.cc"
+#	"src/runtime/cuda/cuda_device_api.cc",
+#	"src/runtime/cuda/cuda_module.cc"
     ],
     hdrs = glob([
       "3rdparty/dmlc-core/include/**/*.h",
