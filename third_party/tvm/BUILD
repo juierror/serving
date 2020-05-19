@@ -41,5 +41,6 @@ cc_library(
     ],
     alwayslink = 1,
     copts = ["-I/usr/local/cuda/include"],
-    linkopts = ["-lcuda -lcublas -lcudnn -lcudart -lnvrtc -L/usr/local/cuda-10.0/lib64/"],
+    # linkopts = ["-lcuda -lcublas -lcudnn -lcudart -lnvrtc -L/usr/local/cuda-10.0/lib64/"],
+    linkopts = ["-L/usr/local/cuda-10.0/lib64/"],
 )
